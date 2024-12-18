@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container  {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  width: calc(100px * 5);
+  height: calc(100px * 5);
+}
+
+button {
+  width: 100px;
+  height: 100px;
+}

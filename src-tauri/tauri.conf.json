@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "steamdeck-keyboard",
+  "version": "0.1.0",
+  "identifier": "com.steamdeck-keyboard.app",
+  "build": {
+    "frontendDist": "../src"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "label": "main",
+        "title": "steamdeck-keyboard-left",
+        "width": 500,
+        "resizable": false,
+        "hiddenTitle": true,
+        "height": 500,
+        "url": "index.html#left"
+      },
+      {
+        "label": "sub",
+        "title": "steamdeck-keyboard-right",
+        "width": 500,
+        "height": 500,
+        "resizable": false,
+        "hiddenTitle": true,
+        "url": "index.html#right"
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}
